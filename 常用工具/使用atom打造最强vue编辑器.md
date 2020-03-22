@@ -80,3 +80,22 @@ module.exports = {
 ```
 
 还有一些规则可以参照eslint官网进行设置
+
+#### eslint-plugin-vue相关配置
+
+如果想要对`.vue`，做相应的规则，还是修改`eslintrc.js`
+
+```javascript
+module.exports = {
+  ...,
+  rules: {
+  	//设置缩进
+    "vue/html-indent":["error",4],
+    //设置单/双引号
+    "vue/html-quotes":["error","double"]
+  },
+  ...
+}
+```
+
+可以看到所有规则都由vue开头，更多的设置及用法可以看看[eslint-plugin-vue官网](https://eslint.vuejs.org/rules/v-on-style.html)
